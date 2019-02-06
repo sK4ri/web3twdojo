@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Applicants</title>
+</head>
+<body>
+    {% block content %}
+        <div>
+            {% for applicant in applicants %}
+            {{ applicant.first_name }}<br/>
+            {% endfor%}
+        </div>
+    {% endblock %}
+</body>
+</html>
